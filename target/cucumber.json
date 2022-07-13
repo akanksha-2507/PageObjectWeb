@@ -1,0 +1,290 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7091625400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify Home page",
+        "description": "",
+        "id": "verify-home-page;verify-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 894792400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 213654500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Petclicnic application should be launched",
+            "match": {
+              "location": "A.petclicnic_application_should_be_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189033800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify image on Home Page",
+            "match": {
+              "location": "A.verify_image_on_Home_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 296800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Image should be verified",
+            "match": {
+              "location": "A.image_should_be_verified()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Home page",
+    "description": "",
+    "id": "verify-home-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/a.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6405228100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Find Owners tab",
+        "description": "",
+        "id": "find-owners-tab;find-owners-tab;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 878595800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1832023700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to PetClinic home page and click on Find Owners tab",
+            "match": {
+              "location": "B.go_to_PetClinic_home_page_and_click_on_FInd_Owners_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9263116100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Owners name, \"Sewanagar\",\"Gwalior\",\"1234567890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sewanagar",
+                  "offset": 18
+                },
+                {
+                  "val": "Gwalior",
+                  "offset": 30
+                },
+                {
+                  "val": "1234567890",
+                  "offset": 40
+                }
+              ],
+              "location": "B.add_Owners(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170904300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Owners with name,\"Sewanagar\",\"Gwalior\",\"1234567890\" should be added",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sewanagar",
+                  "offset": 18
+                },
+                {
+                  "val": "Gwalior",
+                  "offset": 30
+                },
+                {
+                  "val": "1234567890",
+                  "offset": 40
+                }
+              ],
+              "location": "B.owners_should_be_added(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Find Owners tab",
+    "description": "",
+    "id": "find-owners-tab",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/b.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5288889200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Add Pet as Dog",
+        "description": "",
+        "id": "add-pet-as-dog;add-pet-as-dog;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 844475000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6425753000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to Owner info with lastname \"Ritchie\" and click on Add new pet button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ritchie",
+                  "offset": 32
+                }
+              ],
+              "location": "C.go_to_Owner_info_with_lastname_and_click_on_Add_new_pet_button(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2699051100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Pet info name, \"01/20/1994\",\"dog\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01/20/1994",
+                  "offset": 20
+                },
+                {
+                  "val": "dog",
+                  "offset": 33
+                }
+              ],
+              "location": "C.add_Pet_info(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167226200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Pet with name, \"01/20/1994\",\"dog\" should be added",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01/20/1994",
+                  "offset": 16
+                },
+                {
+                  "val": "dog",
+                  "offset": 29
+                }
+              ],
+              "location": "C.pet_with_should_be_added(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Pet as Dog",
+    "description": "",
+    "id": "add-pet-as-dog",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/c.feature"
+  }
+]
